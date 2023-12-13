@@ -1,0 +1,30 @@
+.cards_container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  overflow: hidden;
+}
+
+@media (max-width: 1100px){
+  .cards_container{
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+@media (max-width: 750px){
+  .cards_container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+@media (max-width: 500px){
+  .cards_container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+  }
+}

@@ -1,0 +1,14 @@
+:root{
+  --bg-white: white;  
+  --border-grey: rgb(201, 201, 201);
+  --border-hover-grey: rgb(238, 238, 238);
+  --border-dark: rgb(52, 52, 52);
+  --border-hover-dark: rgb(40, 40, 40);
+  --box-shadow-active: rgb(225, 225, 225);
+  --border-red: rgb(255, 133, 133);
+  --border-hover-red: rgba(255, 133, 133, 0.2);
+  --bg-black: rgb(34, 34, 34);
+  --border-blue : rgb(0, 174, 255);
+  --border-hover-blue: rgba(0, 208, 255, 0.244);
+  --border-hover-bluee: rgba(0, 208, 255, 0.502);
+}

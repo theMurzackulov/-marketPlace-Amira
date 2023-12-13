@@ -1,0 +1,23 @@
+.contentBlock{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  cursor: not-allowed;
+  padding: 100px 0px;
+}
+.contentBlock p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: 600;
+  color: #737373;
+}
+.contentBlock img{
+  max-width: 400px;
+  width: 100%;
+}

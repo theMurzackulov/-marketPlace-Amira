@@ -1,0 +1,37 @@
+.sorting { 
+  position: relative;
+  grid-area: 2 / 5 / 3 / 6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sorting p{
+  cursor: pointer;
+}
+.sort_by p{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+}
+.sort_by p span{
+  color: black;
+  padding: 5px;
+  /* border: 2px solid var(--border-grey); */
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media screen and (max-width: 840px){
+  .sorting { 
+    grid-area: 3 / 2 / 4 / 4; 
+    width: 100%;
+  }
+  .sort_by p{
+    font-size: 18px;
+  }
+}

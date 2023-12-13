@@ -1,0 +1,128 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+  height: 100%; 
+}
+
+.card .card_img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card_img img {
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.card:hover img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.card .card_name {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card_discription {
+  font-size: 14px;
+  color: grey;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.card_price {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.card_btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnMore {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  border: none;
+  padding: 6px;
+  background-color: var(--border-hover-grey);
+  transition: 0.2s;
+}
+.btnMore:hover{
+  background-color: var(--box-shadow-active);
+}
+.card_btns .btnBasket{
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  border: none;
+  padding: 4px 6px;
+  background-color: var(--border-hover-grey);
+  transition: 0.2s;
+}
+.card_btns .btnBasket:hover{
+  background-color: var(--box-shadow-active);
+}
+.card_btns{
+  margin-top: 5px;
+}
+.btnsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 750px) {
+  .card_price {
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: white;
+    color: rgb(50, 50, 50);
+  }
+
+  .btnMore {
+    font-size: 16px;
+  }
+
+  .card_btns .btnBasket {
+    padding: 3px;
+  }
+
+  .card_btns .btnBasket p {
+    font-size: 20px;
+  }
+}
